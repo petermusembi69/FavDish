@@ -1,4 +1,4 @@
-package com.example.android.favdish.ui.dashboard
+package com.example.android.favdish.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.android.favdish.R
+import com.example.android.favdish.viewmodel.DashboardViewModel
 
 class DashboardFragment : Fragment() {
 
