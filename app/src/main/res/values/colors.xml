@@ -11,7 +11,12 @@
     <color name="primaryLightColor">#6abf69</color>
     <color name="primaryDarkColor">#00600f</color>
 
+
     <color name="divider_line_color">#e0e0e0</color>
+
+    <color name="blue_grey_900">#263238</color>
+    <color name="grey_500">#9e9e9e</color>
+
 
     <color name="secondaryColor">#81c784</color>
     <color name="secondaryDarkColor">#519657</color>
