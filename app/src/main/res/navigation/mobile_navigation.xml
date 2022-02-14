@@ -19,7 +19,11 @@
         android:id="@+id/navigation_favorite_dishes"
         android:name="com.example.android.favdish.view.fragments.FavoriteDishesFragment"
         android:label="Favorite"
-        tools:layout="@layout/fragment_favorite_dishes" />
+        tools:layout="@layout/fragment_favorite_dishes" >
+        <action
+            android:id="@+id/action_favorite_dishes_to_dish_details"
+            app:destination="@id/navigation_dish_details" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_random_dishes"
