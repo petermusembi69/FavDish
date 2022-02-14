@@ -9,6 +9,10 @@ import java.lang.IllegalArgumentException
 class FavDishViewModel(private val repository: FavDishRepository) : ViewModel() {
     fun insert(dish: FavDish) = viewModelScope.launch {
         repository.insertFavDishData(dish)
+
+
+    fun update(dish: FavDish) = viewModelScope.launch {
+        repository.updateFavDishData(dish)
     }
 
     val allDishesList: LiveData<List<FavDish>> = repository.allDishesList.asLiveData()
