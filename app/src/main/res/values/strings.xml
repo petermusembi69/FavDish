@@ -40,4 +40,6 @@
     <string name="title_edit_dish">Edit Dish</string>
     <string name="title_add_dish">Add Dish</string>
     <string name="lbl_update_dish">Update Dish</string>
+    <string name="action_filter_dish">Filter Dish</string>
+    <string name="title_select_item_to_filter">SELECT ITEM TO FILTER</string>
 </resources>
