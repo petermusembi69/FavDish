@@ -11,6 +11,17 @@ object Constants {
     const val DISH_IMAGE_SOURCE_ONLINE : String = "Online"
 
     const val EXTRA_DISH_DETAILS : String = "DishDetails"
+    const val API_KEY : String = "apiKey"
+    const val LIMIT_LICENSE : String = "limitLicense"
+    const val TAGS : String = "tags"
+    const val NUMBER : String = "number"
+    const val API_ENDPOINT : String = "recipes/random"
+
+    const val BASE_URL : String = "https://api.spoonacular.com"
+    const val TAGS_VALUE : String = "Vegetarian, dessert"
+    const val LIMIT_LICENSE_VALUE : Boolean = true
+    const val API_KEY_VALUE : String = "ba843224bb7f465e96e1d53d6ace5c6b"
+    const val NUMBER_VALUE : Int = 1
 
     fun dishTypes():ArrayList<String>{
         val list = ArrayList<String>()

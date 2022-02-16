@@ -1,6 +1,7 @@
 package com.example.android.favdish.view.activity
 
 import android.os.Bundle
+import android.view.View
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_all_dishes, R.id.navigation_favorite_dishes, R.id.navigation_notifications
+            R.id.navigation_all_dishes, R.id.navigation_favorite_dishes, R.id.navigation_random_dishes
         ))
         setupActionBarWithNavController(mNavController, appBarConfiguration)
         mBinding.navView.setupWithNavController(mNavController)
@@ -42,10 +43,12 @@ class MainActivity : AppCompatActivity() {
     fun hideBottomNavigationView(){
         mBinding.navView.clearAnimation()
         mBinding.navView.animate().translationY(mBinding.navView.height.toFloat()).duration = 300
+        mBinding.navView.visibility = View.GONE
     }
 
     fun showBottomNavigationView(){
         mBinding.navView.clearAnimation()
         mBinding.navView.animate().translationY(0f).duration = 300
+        mBinding.navView.visibility = View.VISIBLE
     }
 }
