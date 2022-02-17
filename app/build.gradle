@@ -68,6 +68,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     implementation 'com.android.support:palette-v7:28.0.0'
+    def work_version = "2.5.0"
+
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
