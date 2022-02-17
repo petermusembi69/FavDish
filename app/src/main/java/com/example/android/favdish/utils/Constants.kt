@@ -23,6 +23,10 @@ object Constants {
     const val API_KEY_VALUE : String = "ba843224bb7f465e96e1d53d6ace5c6b"
     const val NUMBER_VALUE : Int = 1
 
+    const val NOTIFICATION_ID : String = "FavDish_notification_id"
+    const val NOTIFICATION_NAME : String = "FavDish"
+    const val NOTIFICATION_CHANNEL : String = "FavDish_channel_01"
+
     fun dishTypes():ArrayList<String>{
         val list = ArrayList<String>()
         list.add("breakfast")

@@ -44,4 +44,7 @@
     <string name="title_select_item_to_filter">SELECT ITEM TO FILTER</string>
     <string name="please_wait">Please_wait</string>
     <string name="action_share_dish">Share Dish</string>
+
+    <string name="notification_title">Checkout new dish recipes</string>
+    <string name="notification_subtitle">Tap for more details</string>
 </resources>

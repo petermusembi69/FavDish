@@ -1,5 +1,6 @@
 package com.example.android.favdish.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,7 @@ import androidx.work.*
 import com.example.android.favdish.R
 import com.example.android.favdish.databinding.ActivityMainBinding
 import com.example.android.favdish.model.notification.NotifyWorker
+import com.example.android.favdish.utils.Constants
 import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +41,11 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(mNavController, appBarConfiguration)
         mBinding.navView.setupWithNavController(mNavController)
+
+        if (intent.hasExtra(Constants.NOTIFICATION_ID)) {
+            val notificationId = intent.getIntExtra(Constants.NOTIFICATION_ID,0)
+            mBinding.navView.selectedItemId = R.id.navigation_random_dishes
+        }
         startWork()
     }
 
